@@ -12,6 +12,51 @@
  Text Domain:  twenty-nineteen-enfant
 */
 
+@import "../mixins/utilities";
+@import "../variables-site/variables-site";
+
+@include media(mobile){
+
+    .entry-title{
+        font-size:0.5em !important;
+    }
+    
+    .entry-header{
+        margin-left:12px !important;
+        margin-right:12px !important;
+        margin-top:12px !important;
+    }
+
+}
+
+@include media(tablet){
+
+    .entry-title{
+        font-size:0.5em !important;
+    }
+    
+    .entry-header{
+        margin-left:20px !important;
+        margin-right:20px !important;
+        margin-top:20px !important;
+    }
+    
+}
+
+@include media(desktop){
+
+    .entry-title{
+        font-size:0.5em !important;
+    }
+    
+    .entry-header{
+        margin-left:30px !important;
+        margin-right:30px !important;
+        margin-top:30px !important;
+    }
+    
+}
+
 .site-branding {
     display:flex;
     flex-direction: column; 
@@ -22,8 +67,12 @@
     font-size:2em;
     letter-spacing:2px;
     margin-left:2vw;
+ 
 }
 
+.site-branding > .site-title a{
+    color:white !important;
+}
 .site-header.featured-image .entry-title {
 color:#e6a926;
 }
@@ -68,3 +117,24 @@ thead{
 caption{
     font-size:35px;
 }
+
+.wrapper {
+    display: grid;
+grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    //padding: 5px;
+    //font-size: 2vh;
+}
+
+.session1{
+    //background-color:red;
+}
+

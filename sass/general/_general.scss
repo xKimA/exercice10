@@ -15,18 +15,7 @@
 @import "../mixins/utilities";
 @import "../variables-site/variables-site";
 
-@include media(mobile){
 
-    .entry-title{
-        font-size:1.2 !important;
-    }
-    
-    .entry-header{
-        margin-left:12px !important;
-        margin-right:12px !important;
-        margin-top:12px !important;
-    }
-}
 
 @include media(tablet){
 
@@ -40,6 +29,9 @@
         margin-top:20px !important;
     }
     
+    .box{
+        background-color: #969696 !important;
+    }
 }
 
 @include media(desktop){
@@ -52,6 +44,10 @@
         margin-left:30px !important;
         margin-right:30px !important;
         margin-top:30px !important;
+    }
+
+    .box{
+        background-color: #3F3F3F !important;
     }
     
 }
@@ -75,6 +71,10 @@
 
 .entry-title a:hover{
 color:#e6a926 !important;
+}
+
+h2:before{
+    color:red;
 }
 
 .site-header.featured-image .entry-title {
@@ -132,7 +132,7 @@ grid-gap: 10px;
 }
 
 .box {
-    background-color: #444;
+    background-color: #ddd;
     color: #fff;
     border-radius: 5px;
     //padding: 5px;

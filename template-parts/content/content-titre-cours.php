@@ -10,7 +10,7 @@
  */
 
 ?>
-<div class="box session<?php 
+<div class="box /*session<?php 
 $session ="";
 $post_slug = get_post_field ('post_name', get_post () );
 $session = substr($post_slug, -3,1);

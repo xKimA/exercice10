@@ -18,7 +18,7 @@
 @include media(mobile){
 
     .entry-title{
-        font-size:15px !important;
+        font-size:1.2 !important;
     }
     
     .entry-header{
@@ -26,7 +26,6 @@
         margin-right:12px !important;
         margin-top:12px !important;
     }
-
 }
 
 @include media(tablet){
@@ -73,6 +72,11 @@
 .site-branding > .site-title a{
     color:white !important;
 }
+
+.entry-title a:hover{
+color:#e6a926 !important;
+}
+
 .site-header.featured-image .entry-title {
 color:#e6a926;
 }
@@ -124,6 +128,7 @@ grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
     background-color: #fff;
     color: #444;
+    margin:2vw;
 }
 
 .box {
@@ -137,4 +142,3 @@ grid-gap: 10px;
 .session1{
     //background-color:red;
 }
-

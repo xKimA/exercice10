@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-#general */
+#styleGeneral */
 /*
  Theme Name:   Twenty Nineteen Enfant
  Theme URI:    http://referenced.ca
@@ -139,7 +139,27 @@ caption {
 }
 
 .session1 {
-  background-color: red;
+  background-color: #12cfbc;
+}
+
+.session2 {
+  background-color: #fdd835;
+}
+
+.session3 {
+  background-color: #D16666;
+}
+
+.session4 {
+  background-color: #39586d;
+}
+
+.session5 {
+  background-color: #ec9939;
+}
+
+.session6 {
+  background-color: #02836d;
 }
 
 /*--------------------------------------------------------------

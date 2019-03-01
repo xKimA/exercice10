@@ -18,7 +18,7 @@
 @include media(mobile){
 
     .entry-title{
-        font-size:0.5em !important;
+        font-size:15px !important;
     }
     
     .entry-header{
@@ -32,7 +32,7 @@
 @include media(tablet){
 
     .entry-title{
-        font-size:0.5em !important;
+        font-size:1.2em !important;
     }
     
     .entry-header{
@@ -46,7 +46,7 @@
 @include media(desktop){
 
     .entry-title{
-        font-size:0.5em !important;
+        font-size:1em !important;
     }
     
     .entry-header{
@@ -64,7 +64,7 @@
 
 .site-branding > .site-title {
     background-color: rgb(46, 46, 46);
-    font-size:2em;
+    font-size:3em;
     letter-spacing:2px;
     margin-left:2vw;
  

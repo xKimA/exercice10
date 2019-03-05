@@ -12,7 +12,7 @@
 get_header();
 ?>
 
-///////////////////////////front-page.php///////////////////////
+///////////////////////////front-page.php ///////////////////////
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -33,38 +33,29 @@ get_header();
 			endwhile; // End of the loop.
 
 			//The Query
-			$args = array( 'category_name' => 'introduction');
+			$args = array( 'category_name' => 'evenement',
+			 				'posts_per_page' => 3);
 			$query1 = new WP_Query( $args );
 
 			if ( $query1->have_posts() ) {
 				// The Loop
+			?>
+			<div class ="wrapper2">
+			<?php
 				while ( $query1->have_posts() ) {
 					$query1->the_post();
-					echo '<li>' . get_the_title() . '</li>';
+					/*echo '<li>' . get_the_title() . '</li>';*/
+					the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 				}
+				?>
+				</div>
+				<?php
 				/* Restore original Post Data 
 				* NB: Because we are using new WP_Query we aren't stomping on the 
 				* original $wp_query and it does not need to be reset with 
 				* wp_reset_query(). We just need to set the post data back up with
 				* wp_reset_postdata().
 				*/
-				wp_reset_postdata();
-			}
-
-			/*Extraire les événements*/
-
-			/* The 2nd Query (without global var) */
-			$args2 = array( 'category_name' => 'cours');
-			$query2 = new WP_Query( $args2 );
-
-			if ( $query2->have_posts() ) {
-				// The 2nd Loop
-				while ( $query2->have_posts() ) {
-					$query2->the_post();
-					echo '<li>' . get_the_title( $query2->post->ID ) . '</li>';
-				}
-
-				// Restore original Post Data
 				wp_reset_postdata();
 			}
 			?>

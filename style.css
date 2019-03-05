@@ -146,9 +146,11 @@ caption {
   color: #444;
 }
 
-/*.wrapper2 .entry-title{
-    background-color:yellow;
-}*/
+.wrapper2 .entry-title {
+  background-color: #e6a926;
+  height: 30vh;
+}
+
 .box {
   background-color: #ddd;
   color: #fff;

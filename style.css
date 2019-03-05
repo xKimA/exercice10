@@ -140,6 +140,9 @@ caption {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   color: #444;
   margin: 2vw;
+  background-color: #494949;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .wrapper2 a {
@@ -149,6 +152,7 @@ caption {
 .wrapper2 .entry-title {
   background-color: #e6a926;
   height: 30vh;
+  border: 2px solid black;
 }
 
 .box {
